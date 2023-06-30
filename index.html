@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <meta charset="UTF-8" />
+    <title>HTML5 Canvas</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <canvas id="draw" width="800" height="800"></canvas>
+    <div class="toolbar-container">
+      <div class="toolbar">
+        <div class="buttons">
+          <button class="save-button" name="save"><span class="material-symbols-rounded">save</span></button>
+          <div class="break-line"></div>
+          <button class="button active" name="pen"><span class="material-symbols-rounded">stylus</span></button>
+          <button class="button" name="eraser"><span class="material-symbols-rounded">ink_eraser</span></button>
+          <button class="clear-button" name="clear"><span class="material-symbols-rounded">delete</span></button>
+          <button class="undo-button disabled" name="undo"><span class="material-symbols-rounded">undo</span></button>
+          <button class="redo-button disabled" name="redo"><span class="material-symbols-rounded">redo</span></button>
+        </div>
+
+        <div class="palette">
+          <button class="color-button red active" name="red"></button>
+          <button class="color-button orange" name="orange"></button>
+          <button class="color-button yellow" name="yellow"></button>
+          <button class="color-button green" name="green"></button>
+          <button class="color-button blue" name="blue"></button>
+          <button class="color-button purple" name="purple"></button>
+          <button class="color-button black" name="black"></button>
+          <div class="break-line"></div>
+          <input class="color-picker" type="color" name="color" value="#000000" />
+        </div>
+
+        <div class="stroke-controls">
+          <input class="stroke-width" type="range" name="size" min="1" max="100" value="10" />
+          <div class="stroke-width-label">
+            <label for="size">10px</label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
