@@ -27,7 +27,6 @@ canvas {
     align-items: center;
     min-width: 100%;
     padding: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .button, .clear-button, .color-button, .undo-button, .redo-button, .save-button {
