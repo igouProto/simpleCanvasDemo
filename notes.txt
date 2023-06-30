@@ -1,7 +1,7 @@
 This project started from a tutorial in JS30 where I was taught how to use the canvas API. 
 Written in pure JS with no extra library.
 
-Extra things I added:
+Things I added:
 - extend to a working simple drawing app
     - undo/redo functions (limited at 50 steps max to save memory)
     - clear canvas
